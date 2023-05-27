@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  
+}
+
+body {
+  font-family: 'Alkatra', cursive;
+  background: radial-gradient( #FFFFFF 0%, #8460BF 100%);
+  background-size: 400% 400%;
+  height: 100%;
+  margin-top: 200px;
+  text-align: center;
+  place-items: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 1.1;
+  letter-spacing: 10px;
+  text-shadow: -1px -1px 40px #ffffff;
+  margin-bottom: 15px;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 7rem;
+  color: rgb(87, 180, 107);
+  text-shadow: 2px 2px 0px #000000;
+}
+
+button {
+  font-family: 'Alkatra', cursive;
+  font-weight: bold;
+  padding: 17px;
+  text-align: center;
+  width: 180px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+  color: #000;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: all .5s ease;
+  
+ }
+ 
+ button:hover {
+  letter-spacing: 3px;
+  font-size: 14px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+ }
+ 
+ button:active {
+  letter-spacing: 3px;
+  font-size: 14px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+
+ .loader {
+  width: 70px;
+  margin-left: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 70px;
+  background: #4285f4;
+  border-radius: 10%;
+  animation: dice3 9s ease-in-out infinite;
+  filter: drop-shadow(2px 3px 40px #444);
+}
+
+@keyframes dice3 {
+  from, to {
+    transform: translateX(-100px) rotateX(0deg);
+  }
+
+  25% {
+    background: #db4437;
+  }
+
+  50% {
+    background: #f4b400;
+    transform: translateX(400px) rotate(360deg);
+  }
+
+  75% {
+    background: #0f9d58;
+  }
+}
